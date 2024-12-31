@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #111;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gift-btn {
+    background: linear-gradient(45deg, #ff0066, #00b3b3);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  .gift-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #ff0066, 0 0 10px #ff0066, 0 0 15px #ff0066;
+    }
+    100% {
+      text-shadow: 0 0 20px #ff0066, 0 0 30px #ff0066, 0 0 40px #ff0066;
+    }
+  }
+  
+  .celebration-message {
+    display: none;
+    margin-top: 20px;
+    color: #ffcc00;
+    animation: messageGlow 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes messageGlow {
+    0% {
+      text-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00, 0 0 15px #ffcc00;
+    }
+    100% {
+      text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00;
+    }
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
